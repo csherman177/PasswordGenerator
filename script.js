@@ -6,12 +6,14 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password"); }
 
-window.prompt ("How many characters would you like this password to contain?"); 
+var character = window.prompt ("How many characters would you like this password to contain?"); 
 // How do I limit the number of characters?
  
-window.confirm ("Do you want to use special characters?");
-window.confirm ("Do you want to use uppercase letters?");
-window.confirm ("Do you want to use lowercase letters?");
+var special = window.confirm ("Do you want to use special characters?");
+var upper = window.confirm ("Do you want to use uppercase letters?");
+var lower = window.confirm ("Do you want to use lowercase letters?");
+
+var minimumcount=0;
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
@@ -22,5 +24,5 @@ var password= "";
 
 for (var i = 0; i <= passwordLength; i++) {
   var randomNumber = Math.floor(Math.random() * chars.length);
-  writepassword += chars.substring(randomNumber, randomNumber +1);
+ // Grab character at random position character@//
  }
