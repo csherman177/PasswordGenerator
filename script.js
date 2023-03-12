@@ -43,3 +43,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// For Loop for determining character string values
+
+if (special, upper, lower)
+
