@@ -53,14 +53,6 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// For Loop for determining character string values
-
-//if (specialCharacters)
-
-//if (upperCase)
-
-//if (lowerCase)
-
 function generatePassword () {
   var options = generatePasswordOptions ();
   console.log(options);
