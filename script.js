@@ -3,18 +3,20 @@ var generateBtn = document.querySelector("#generate"); // The variable is holdin
 
 // Write password to the #password input
 
+function generatePasswordOptions () {
 var specialCharacters = "!@#%%^()*&/><.,;'[]"
 var upperCase ="ABCDEFGHIJKLMONOPQRSTUVWXYZ"
 var lowerCase = "0123456789abcdefghijklmnopqrstuvwxyz"
+}
 
 function generatePassword() {
   var character = window.prompt("How many characters would you like this password to contain?");
   var password = "";
   var chars = "";
-
+  }
   if (character < 8) {
     alert("Password length must be at least 8 characters.");
-    return null;
+    // return null;
   }
 
   if (character > 128) {
@@ -34,7 +36,7 @@ function generatePassword() {
   };
 
   console.log (passwordOptions);
-  return: passwordOptions;
+  // return passwordOptions;
 
   for (var i = 0; i <= character; i++) {
     var randomNumber = Math.floor(Math.random() * chars.length);
@@ -42,8 +44,8 @@ function generatePassword() {
     password += randomLetter;
     console.log(password);
   }
-  return password;
-}
+ return password;
+
 
 function writePassword() {
   var password = generatePassword();
@@ -57,15 +59,15 @@ function generatePassword () {
   var options = generatePasswordOptions ();
   console.log(options);
 
-  if (options.special === true) {
+  if (options.specialCharacters === true) {
     console.log ('special characters please!',)
   }
 
-  if (options.upper === true) {
+  if (options.upperCase === true) {
     console.log ('Uppercase characters please!',)
   }
 
-  if (options.lower === true) {
+  if (options.lowerCase === true) {
     console.log ('Lowercase characters please!',)
   }
 
