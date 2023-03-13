@@ -26,6 +26,16 @@ function generatePassword() {
   var lower = window.confirm("Do you want to use lowercase letters?");
   var minimumcount = 0;
 
+  var passwordOptions = {
+    character: character,
+    special: special,
+    upper: upper,
+    lower: lower,
+  };
+
+  console.log (passwordOptions);
+  return: passwordOptions;
+
   for (var i = 0; i <= character; i++) {
     var randomNumber = Math.floor(Math.random() * chars.length);
     var randomLetter = chars[randomNumber];
@@ -45,5 +55,28 @@ generateBtn.addEventListener("click", writePassword);
 
 // For Loop for determining character string values
 
-if (special, upper, lower)
+//if (specialCharacters)
+
+//if (upperCase)
+
+//if (lowerCase)
+
+function generatePassword () {
+  var options = generatePasswordOptions ();
+  console.log(options);
+
+  if (options.special === true) {
+    console.log ('special characters please!',)
+  }
+
+  if (options.upper === true) {
+    console.log ('Uppercase characters please!',)
+  }
+
+  if (options.lower === true) {
+    console.log ('Lowercase characters please!',)
+  }
+
+}
+
 
